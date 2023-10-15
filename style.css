@@ -1,0 +1,145 @@
+.header {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.cart {
+    display: none;
+}
+
+
+.div img {
+    display: flex
+}
+
+.container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.container img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: transform .2s;
+    /* Animation */
+}
+
+.container img:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.Hey img {
+    transition: transform .2s;
+    /* Animation */
+}
+
+.Hey img:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color:chocolate;
+    background-color:beige;
+    padding: 50px;
+}
+
+.banner::after {
+    content: "";
+    background-image: url('path_to_watermark_image.jpg');
+    background-repeat: repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.DUOC {
+    position: relative;
+    text-align: center;
+    color:chocolate;
+    background-color:beige;
+    padding: 50px;
+  }
+
+.DUOC::after {
+    content: "";
+    background-image: url('path_to_logo_image.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .section:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+  
+  .section:nth-child(even) {
+    background-color: black;
+    color: white;
+  }

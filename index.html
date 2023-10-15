@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- code chuyển slide của w3schools -->
+    <!-- Liên kết file CSS với file HTML -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/logo.png?v=401">
+    </div>
+
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#newarrivals">NEW ARRIVALS</a>
+        <a href="#sale">SALE</a>
+        <a href="#men">MEN</a>
+        <a href="#women">WOMEN</a>
+        <a href="#kids">KIDS</a>
+        <a href="#accessories">ACCESSORIES</a>
+        <a href="#customerservice">CUSTOMER SERVICE</a>
+
+        <div class="navbar-right">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <button id="login">Đăng nhập</button>
+            <button id="cart-button">Giỏ hàng</button>
+        </div>
+    </div>
+    <div class="slide_imgs">
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/slideshow_1.jpg?v=397" alt="1" class="slides"
+            width="100%">
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/slideshow_2.jpg?v=397" alt="2" class="slides"
+            width="100%">
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/slideshow_3.jpg?v=397" alt="3" class="slides"
+            width="100%">
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/slideshow_4.jpg?v=397" alt="4" class="slides"
+            width="100%">
+    </div>
+    <script>
+        w3.slideshow(".slides", 2000);
+    </script>
+    <div class="product-list">
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/anh_sp_add_web_des2-01-01-02-02-02-02-02-02-01_e6f3f24d087043d181b9f651187c28c1_medium.jpg"
+                alt="Shoe 1" style="height:200px;">
+            <h2>MIZUNO ALPHA PRO AS TF RELEASE </h2>
+            <p>3,050,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/1-01-01-01-01-01-02-01-02-02-02-02-02-02-02-01-02-01-02-01-01-01-02-02_f5dd1322dc5a4ef3b48c6813530be6bb_1024x1024.jpg"
+                alt="Shoe 2" style="height:200px;">
+            <h2> PREDATOR ACCURACY .1 TF CRAZYRUSH</h2>
+            <p>2,800,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/bd50cc11af5c4fc6a28fad5d3b8f4a1d_e0faca283bd848188787883805d6f153_1024x1024.jpeg"
+                alt="Shoe 3" style="height:200px;">
+            <h2>ADIDAS X CRAZYFAST MESSI .1 FG INFINITO</h2>
+            <p>5,250,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/4593767f2b4a_2d5e332400264ae0b337a49f4cd889a9_1024x1024.jpeg"
+                alt="Shoe 4" style="height:200px;">
+            <h2>ADIDAS PREDATOR ACCURACY </h2>
+            <p>4,050,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/1657d747cc6b_887525212ac04a819b1b7ff5ea997de4_1024x1024.jpeg"
+                alt="Shoe 5" style="height:200px;">
+            <h2>ADIDAS PREDATOR EDGE .1 TF GAME DATA </h2>
+            <p>2,700,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+            <img src="https://product.hstatic.net/1000061481/product/fceab34314bb_1420949ae89047e8ba0cc3d3ce473799_1024x1024.jpeg"
+                alt="Shoe 6" style="height:200px;">
+            <h2>ADIDAS PREDATOR EDGE .1 TF SAPPHIRE EDGE</h2>
+            <p>2,400,000₫</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+
+    <div id="cart" class="cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <!-- Danh sách sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+    </div>
+    <style>
+        .Hey {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Hey img {
+            width: 24%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h2>Bạn đang tìm?</h2>
+        <div class="Hey">
+            <img src="https://theme.hstatic.net/1000061481/1001035882/14/index_banner_1.jpg?v=401" alt="Image 1">
+            <img src="https://theme.hstatic.net/1000061481/1001035882/14/index_banner_2.jpg?v=401" alt="Image 2">
+            <img src="https://theme.hstatic.net/1000061481/1001035882/14/index_banner_3.jpg?v=401" alt="Image 3">
+            <img src="https://theme.hstatic.net/1000061481/1001035882/14/index_banner_4.jpg?v=401" alt="Image 4">
+        </div>
+        <div class="banner">
+            <h1>Câu chuyện về NEYMARSPORT</h1>
+            <p>Đây là chuyện mà mọi người đều biết. Neymarsport là thương hiệu thể thao số 1 tại Việt Nam</p>
+        </div>
+        <div class="chat-icon">
+            <img src="path_to_chat_icon.jpg" alt="Chat">
+        </div>
+        <div class="DUOC">
+            <h1>NEYMARSPORT được hình thành như thế nào?</h1>
+            <h3>Khởi nguồn từ niềm đam mê bất tận với giày bóng đá, năm 2012 khi còn ngồi ở ghế nhà trường, 2 Founder Long Nani và Đại Neymar, nhận thấy việc tìm mua 1 đôi giày bóng đá chính hãng tại Việt Nam thực sự là điều vô cùng khó khăn. Nhìn sang các nước láng giềng như Thái Lan hay Trung Quốc, người dân thường sử dụng giày chính hãng, và họ sản xuất rất nhiều giày nhái để đẩy qua thị trường Việt Nam. Bản thân của người dân Việt Nam cũng chưa có khái niệm rõ ràng về "Giày bóng đá chính hãng" nên thường mua nhầm những sản phẩm nhái này. Nhận thấy đây là cơ hội cũng là sứ mệnh cần phải thực hiện, NEYMARSPORT được ra đời từ đó. 
+                Cái tên NEYMARSPORT ra đời cũng rất ngẫu nhiên. Năm 2012 Neymar là một cầu thủ trẻ đang lên tại Santos, nhận thấy tiềm năng cầu thủ này sẽ trở thành một ngôi sao tiếp theo thay thế cho CR7 và Messi, chúng tôi đã quyết định chọn NEYMAR và thêm SPORT để xây dựng lên đứa con tinh thần của mình, với mong muốn thương hiệu non trẻ này một ngày nào đó sẽ vươn mình trở thành một thương hiệu lớn. 
+                Bắt đầu với cửa hàng đầu tiên 40m2 tại TP Thủ Đức, sau hơn 10 năm hình thành và phát triển, chúng tôi hiện tại có 5 chi nhánh tại TP HCM, phục vụ hơn 30.000 Khách hàng mỗi năm trên mọi miền tổ quốc. Là đơn vị đi tiên phong trong mô hình reseller giày bóng đá chính hãng, chúng tôi tự hào là một trong những hệ thống cung cấp giày bóng đá chính hãng hàng đầu tại Việt Nam. </h3>
+        </div>
+    </body>
+    <div class="container">
+        <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" alt="Zalo">
+        <img src="https://png.pngtree.com/png-clipart/20230320/original/pngtree-circle-phone-call-icon-in-black-color-png-image_8997757.png"
+            alt="Call">
+        <img src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/03426705-e054-4210-4cf1-0fb193c0fc00/preview"
+            alt="Messenger">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+            alt="Facebook">
+    </div>
+    <div class="section">
+        <h1>Hỗ Trợ</h1>
+        <p>Cửa Hàng</p>
+        <p>Số điện thoại: +84 123456789</p>
+        <p>Địa chỉ: 123 Đường ABC, TP.HCM</p>
+    </div>
+    
+    <div class="section">
+        <h1>Hệ Thống Chi Nhánh</h1>
+        <img src="https://theme.hstatic.net/1000061481/1001035882/14/index_store_5.jpg?v=401" alt="plapla" style="height:200px;">
+        <!-- Add images of your products here -->
+    </div>
+    
+    <div class="section">
+        <h1>Khách Hàng Nói Tiếng</h1>
+        <img src="https://file.hstatic.net/1000061481/file/untitled-1327435_54566cec9bfa4e5d94cb04a340068bbb.jpg" alt="pllll" style="height:500px;">
+        <!-- Add images of people shopping here -->
+    </div>
+</body>
+<script src="/app.js"></script>
+
+</html>
